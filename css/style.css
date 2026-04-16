@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #222;
+    background: linear-gradient(135deg, #667eea, #764ba2, #4facfe, #00f2fe);
+    background-size: 300% 300%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    background: linear-gradient(90deg, rgba(102,126,234,0.95), rgba(118,75,162,0.95));
+    padding: 1rem 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+nav ul li {
+    float: left;
+    margin: 0 20px;
+}
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+main {
+    position: relative;
+    max-width: 850px;
+    margin: 4rem auto;
+    padding: 2.5rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    position: relative;   /* still counts */
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #4b5563;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    margin-top: 1.5rem;
+}
+
+section img {
+    float: right;
+    width: 260px;
+    margin: 0 0 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.15);
+    color: white;
+    margin-top: 4rem;
+}
