@@ -26,3 +26,29 @@ marker.addListener("click", () => {
 });
 
 }
+
+// ===== Dark Mode Toggle with Persistence =====
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("darkModeToggle");
+
+  // Check saved preference
+  const savedMode = localStorage.getItem("darkMode");
+
+  if (savedMode === "enabled") {
+    document.body.classList.add("dark-mode");
+  }
+
+  if (toggleButton) {
+    toggleButton.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+
+      // Save preference
+      if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("darkMode", "enabled");
+      } else {
+        localStorage.setItem("darkMode", "disabled");
+      }
+    });
+  }
+});
