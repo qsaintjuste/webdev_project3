@@ -123,3 +123,18 @@ footer {
   margin-top: 20px;
   border-radius: 10px;
 }
+
+#darkModeToggle {
+  background-color: white;
+  color: #333;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+#darkModeToggle:hover {
+  background-color: #ddd;
+}
