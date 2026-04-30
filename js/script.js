@@ -52,3 +52,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+/* ===== Image Slider Logic ===== */
+
+const slides = [
+  "media/slide1.jpg",
+  "media/slide2.jpg",
+  "media/slide3.jpg"
+];
+
+let currentSlide = 0;
+
+function showSlide(index) {
+  const image = document.getElementById("slider-image");
+  image.src = slides[index];
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
