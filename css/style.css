@@ -163,3 +163,18 @@ body.dark-mode button {
 body.dark-mode main {
   background: #1e1e1e;
 }
+
+/* Tablet breakpoint */
+@media (min-width: 600px) {
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+}
